@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: white; /* düz beyaz ekran */
+  cursor: default; /* gerçek imleç GÖRÜNÜR olacak */
+}
+
+/* Türk bayrağı */
+.cursor-flag {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 32px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg')
+              center/cover no-repeat;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* tıklamayı engellemez */
+  transition: transform 0.05s linear;
+  z-index: 9999;
+}
